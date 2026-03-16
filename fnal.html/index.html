@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VOR TEX – สัมผัสโลกแห่งภาพยนตร์</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700;800&family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+  <div class="container">
+
+    <a class="navbar-brand" href="#">
+      <span class="logo-spu">VOR</span><span class="logo-bit">TEX</span>
+      <small class="logo-sub d-block">CINEMA · THE WORLD IN MOTION</small>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navMenu"
+            aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#movies" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            ภาพยนตร์
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#" data-movie="0">ล้วงลับเวทีลวง</a></li>
+            <li><a class="dropdown-item" href="#" data-movie="1">เซลล์ขยันพันธุ์เดือด</a></li>
+            <li><a class="dropdown-item" href="#" data-movie="2">Gundam Seed Freedom Special Edition</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">เกี่ยวกับเรา</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">ติดต่อเรา</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="banner" id="home">
+  <div class="banner-overlay"></div>
+  <div class="banner-content text-center">
+    <p class="banner-tag">🎬 ยินดีต้อนรับสู่โลกแห่งซีเนม่า</p>
+    <h1 class="banner-title">สัมผัสโลกของ<br/>ภาพยนตร์สุดมันส์</h1>
+    <p class="banner-sub">รวมภาพยนตร์สุดยอดแห่งปี พร้อมรีวิวและเนื้อเรื่องครบครัน</p>
+    <a href="#movies" class="btn btn-gold mt-3">ดูภาพยนตร์ทั้งหมด</a>
+  </div>
+</section>
+
+<section class="section-dark" id="movies">
+  <div class="container">
+    <h2 class="section-title text-center">ภาพยนตร์แนะนำ</h2>
+    <p class="section-sub text-center">คัดสรรภาพยนตร์คุณภาพสูงเพื่อคุณโดยเฉพาะ</p>
+
+    <div class="row g-4 justify-content-center mt-3">
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="movie-card">
+          <div class="movie-img-wrap">
+            <img src="https://picsum.photos/seed/magic/400/560" alt="ล้วงลับเวทีลวง" class="movie-img" />
+            <div class="movie-overlay">
+              <span class="badge-genre">ระทึกขวัญ</span>
+            </div>
+          </div>
+          <div class="movie-body">
+            <h5 class="movie-title">ล้วงลับเวทีลวง</h5>
+            <p class="movie-snippet">เรื่องของนักมายากลที่ซ่อนความจริงอันน่ากลัวไว้...</p>
+            <button class="btn btn-outline-gold w-100" data-bs-toggle="modal" data-bs-target="#movieModal" data-movie="0">
+              <i class="bi bi-play-circle me-1"></i> ดูรายละเอียด
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="movie-card">
+          <div class="movie-img-wrap">
+            <img src="https://picsum.photos/seed/cell/400/560" alt="เซลล์ขยันพันธุ์เดือด" class="movie-img" />
+            <div class="movie-overlay">
+              <span class="badge-genre">แอ็กชัน</span>
+            </div>
+          </div>
+          <div class="movie-body">
+            <h5 class="movie-title">เซลล์ขยันพันธุ์เดือด</h5>
+            <p class="movie-snippet">เรื่องของการต่อสู้กับเชื้อโรคร้ายในร่างกายมนุษย์...</p>
+            <button class="btn btn-outline-gold w-100" data-bs-toggle="modal" data-bs-target="#movieModal" data-movie="1">
+              <i class="bi bi-play-circle me-1"></i> ดูรายละเอียด
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="movie-card">
+          <div class="movie-img-wrap">
+            <img src="https://picsum.photos/seed/gundam/400/560" alt="Gundam Seed Freedom" class="movie-img" />
+            <div class="movie-overlay">
+              <span class="badge-genre">Sci-Fi</span>
+            </div>
+          </div>
+          <div class="movie-body">
+            <h5 class="movie-title">Gundam Seed Freedom Special Edition</h5>
+            <p class="movie-snippet">เรื่องของการต่อสู้เพื่ออิสรภาพในห้วงอวกาศอันกว้างใหญ่...</p>
+            <button class="btn btn-outline-gold w-100" data-bs-toggle="modal" data-bs-target="#movieModal" data-movie="2">
+              <i class="bi bi-play-circle me-1"></i> ดูรายละเอียด
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="movieModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content modal-dark">
+
+      <div class="modal-header">
+        <div class="modal-header-bg">
+          <div class="modal-header-left">
+            <span class="modal-badge">🎬 Now Showing</span>
+            <h5 class="modal-title" id="modalMovieTitle">ชื่อภาพยนตร์</h5>
+          </div>
+          <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-4">
+            <div class="modal-poster-wrap">
+              <img id="modalMovieImg" src="" alt="" />
+              <div class="modal-poster-shine"></div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="modal-info">
+
+              <div class="modal-meta-row">
+                <span class="modal-meta-label"><i class="bi bi-tag-fill"></i> ประเภท</span>
+                <span class="modal-meta-value" id="modalGenre">–</span>
+              </div>
+              <div class="modal-divider"></div>
+
+              <div class="modal-meta-row">
+                <span class="modal-meta-label"><i class="bi bi-camera-video-fill"></i> ผู้กำกับ</span>
+                <span class="modal-meta-value" id="modalDirector">–</span>
+              </div>
+              <div class="modal-divider"></div>
+
+              <div class="modal-meta-row">
+                <span class="modal-meta-label"><i class="bi bi-person-fill"></i> นักแสดงนำ</span>
+                <span class="modal-meta-value" id="modalCast">–</span>
+              </div>
+              <div class="modal-divider"></div>
+
+              <div class="modal-meta-row">
+                <span class="modal-meta-label"><i class="bi bi-journal-text"></i> เนื้อเรื่องย่อ</span>
+                <div class="modal-synopsis-box mt-2">
+                  <p class="modal-synopsis-text" id="modalSynopsis">–</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-gold px-5" data-bs-dismiss="modal">
+          <i class="bi bi-x-circle me-2"></i>ปิด
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<section class="section-mid" id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 text-center">
+        <div class="about-logo-wrap">
+          <span class="about-logo-big">🎬</span>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <h2 class="section-title">เกี่ยวกับเรา</h2>
+        <div class="divider-gold mb-4"></div>
+        <p class="about-text">
+          <strong>VORTEX Cinema</strong> คือแพลตฟอร์มภาพยนตร์ที่ถูกสร้างขึ้นสำหรับคนที่หลงใหลในศิลปะของการเล่าเรื่อง
+          เราเชื่อว่าทุกเฟรมมีพลัง และทุกฉากมีชีวิต — ภาพยนตร์ไม่ใช่แค่ความบันเทิง แต่คือประสบการณ์ที่เปลี่ยนมุมมองโลก
+        </p>
+        <p class="about-text">
+          ดำดิ่งสู่คอลเล็กชันภาพยนตร์ระดับโลก พร้อมรีวิวเชิงลึก เนื้อเรื่องฉบับเต็ม และข้อมูลเบื้องหลังที่หาไม่ได้ที่ไหน
+          เพราะสำหรับ VORTEX — ทุกการชมคือการเดินทางครั้งใหม่
+        </p>
+        <ul class="about-list mt-3">
+          <li><i class="bi bi-check-circle-fill text-gold me-2"></i>ข้อมูลภาพยนตร์ครบถ้วน</li>
+          <li><i class="bi bi-check-circle-fill text-gold me-2"></i>อัปเดตใหม่ทุกสัปดาห์</li>
+          <li><i class="bi bi-check-circle-fill text-gold me-2"></i>รีวิวโดยทีมผู้เชี่ยวชาญ</li>
+          <li><i class="bi bi-check-circle-fill text-gold me-2"></i>ใช้งานได้ทุกอุปกรณ์</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark" id="contact">
+  <div class="container">
+    <h2 class="section-title text-center">ติดต่อเรา</h2>
+    <p class="section-sub text-center">มีคำถามหรือข้อเสนอแนะ? เราพร้อมรับฟังเสมอ</p>
+
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-7">
+        <div class="contact-card">
+          <div class="mb-4">
+            <label for="inputName" class="form-label contact-label">ชื่อ-นามสกุล</label>
+            <input type="text" class="form-control contact-input" id="inputName" placeholder="กรอกชื่อ-นามสกุล" />
+          </div>
+          <div class="mb-4">
+            <label for="inputEmail" class="form-label contact-label">อีเมล</label>
+            <input type="email" class="form-control contact-input" id="inputEmail" placeholder="กรอกอีเมล" />
+          </div>
+          <div class="mb-4">
+            <label for="inputMessage" class="form-label contact-label">ข้อความ</label>
+            <textarea class="form-control contact-input" id="inputMessage" rows="5" placeholder="กรอกข้อความ..."></textarea>
+          </div>
+          <div class="text-end">
+            <button class="btn btn-gold px-5" onclick="submitContact()">
+              <i class="bi bi-send me-2"></i>ส่งข้อมูล
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container text-center">
+    <p class="footer-copy">© 2025 Movie By <span class="text-gold">68039821</span></p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com" target="_blank" class="social-btn facebook" aria-label="Facebook">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="social-btn instagram" aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://line.me" target="_blank" class="social-btn line" aria-label="Line">
+        <i class="bi bi-line"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index:9999">
+  <div id="contactToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive">
+    <div class="d-flex">
+      <div class="toast-body"><i class="bi bi-check-circle me-2"></i>ส่งข้อมูลเรียบร้อยแล้ว!</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
